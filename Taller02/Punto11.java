@@ -43,10 +43,5 @@ public class Punto11 {
             }
         }
 
-        int mayor = 
-
-
-
-
     }
 }
