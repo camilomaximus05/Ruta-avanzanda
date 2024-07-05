@@ -5,11 +5,11 @@ public class Punto01 {
     public static void main (String[] args){
         Scanner scanner = new Scanner (System.in);
 
-        System.out.println("Ingrese el primer número que desea ingresar");
+        System.out.println("Ingrese el primer número que desea operar");
         double numRt = scanner.nextDouble();
         scanner.nextLine();
 
-        System.out.println("Ingrese el primer número que desea ingresar");
+        System.out.println("Ingrese el segundo número que desea operar");
         double numNd = scanner.nextDouble();
         scanner.nextLine();
 
