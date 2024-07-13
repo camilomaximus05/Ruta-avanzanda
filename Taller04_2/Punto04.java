@@ -14,7 +14,7 @@ public class Punto04 {
         double [] prices = new double[num];
         int [] quantities = new int[num];
         double total = 0;
-        double discount = 0;
+        double discount ;
         
 
         for (int i = 0; i < num; i++) {
