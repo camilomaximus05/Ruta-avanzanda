@@ -1,3 +1,5 @@
+package Taller06_POO_02.src;
+
 public class Producto {
     private long id;
     private String nombre;

@@ -1,3 +1,5 @@
+package Taller06_POO_02.src;
+
 public class Empleado extends Persona{
 
     private long idEmpleado;

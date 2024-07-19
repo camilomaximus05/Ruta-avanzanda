@@ -1,3 +1,5 @@
+package Taller06_POO_02.src;
+
 import  java.util.*;
 public class Inventario {
 

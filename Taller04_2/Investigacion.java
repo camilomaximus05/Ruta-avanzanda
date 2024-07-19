@@ -11,16 +11,15 @@ public class Investigacion {
 
 
 
-        ArrayList<Integer> numeros = new ArrayList<>();
-        numeros.add(5);
-        numeros.add(10);
-        numeros.add(15);
-
-
-
-        ArrayList<String> palabras = new ArrayList<>();
-        palabras.add("Hola");
-        palabras.add("Mundo");
+       /* ArrayList<Integer> numeros = new ArrayList<>();
+        * numeros.add(5);
+        * numeros.add(10);
+        * numeros.add(15);
+        *
+        * ArrayList<String> palabras = new ArrayList<>();
+        * palabras.add("Hola");
+        * palabras.add("Mundo");
+       */
 
         //Métodos principales:
 
@@ -37,13 +36,13 @@ public class Investigacion {
 
         //Ejemplo de uso de métodos:
 
-        ArrayList<Double> precios = new ArrayList<>();
-        precios.add(19.99);
-        precios.add(25.50);
-        double primerPrecio = precios.get(0);
-        precios.remove(1);
-        int cantidadElementos = precios.size();
-
+        /* ArrayList<Double> precios = new ArrayList<>();
+         * precios.add(19.99);
+         * precios.add(25.50);
+         * double primerPrecio = precios.get(0);
+         * precios.remove(1);
+         * int cantidadElementos = precios.size();
+         */
 
         //Map
 
@@ -52,15 +51,15 @@ public class Investigacion {
 
         //Ejemplos con tipos de datos:
 
-
-        Map<String, Integer> edades = new HashMap<>();
-        edades.put("Juan", 25);
-        edades.put("María", 30);
-
-
-        Map<Integer, String> nombres = new HashMap<>();
-        nombres.put(1, "Pedro");
-        nombres.put(2, "Ana");
+        /* Map<String, Integer> edades = new HashMap<>();
+         * edades.put("Juan", 25);
+         *  edades.put("María", 30);
+         *
+         *
+         * Map<Integer, String> nombres = new HashMap<>();
+         * nombres.put(1, "Pedro");
+         * nombres.put(2, "Ana");
+         */
 
         //Métodos principales:
 
@@ -74,14 +73,16 @@ public class Investigacion {
         
         //keySet(): Devuelve un conjunto de todas las claves en el mapa.
 
-        Map<String, Double> notas = new HashMap<>();
-        notas.put("Juan", 8.5);
-        notas.put("María", 9.0);
-        double notaJuan = notas.get("Juan");
-        notas.remove("María");
-        boolean contieneMaria = notas.containsKey("María");
-        Set<String> estudiantes = notas.keySet();
-        /**
+        /* Map<String, Double> notas = new HashMap<>();
+        *  notas.put("Juan", 8.5);
+        *  notas.put("María", 9.0);
+        *  double notaJuan = notas.get("Juan");
+        *  notas.remove("María");
+        *  boolean contieneMaria = notas.containsKey("María");
+        *  Set<String> estudiantes = notas.keySet();
+        */
+
+        /*
          * Investigación 3: OOP - Pilares del Paradigma Orientado a Objetos
          *
          * Los pilares del paradigma orientado a objetos son conceptos fundamentales que guían el diseño de sistemas de software:

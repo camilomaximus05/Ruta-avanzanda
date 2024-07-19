@@ -1,3 +1,5 @@
+package Taller06_POO_02.src;
+
 public class ProductoEspecifico extends Producto {
     private String marca;
     private String categoria;

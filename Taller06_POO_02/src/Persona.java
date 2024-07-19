@@ -1,3 +1,5 @@
+package Taller06_POO_02.src;
+
 public class Persona {
     public String nombre;
     public int edad;
