@@ -9,17 +9,18 @@ public class GestionCursos {
 
     static ArrayList<Estudiante> listaDeEstudiantes = new ArrayList<>() ;
     
-    static void agregarCursos(){
+    static void agregarCursos (){
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("¿Cuantos cursos quieres agregar?");
         int cantidad = scanner.nextInt();
+        scanner.nextLine();
 
         for (int i = 0; i < cantidad; i++) {
             
             System.out.println("Ingresa el Codigo del curso: ");
-            int codigo = scanner.nextInt();
+            long codigo = scanner.nextLong();
             scanner.nextLine();
 
             System.out.println("Ingresa el nombre del curso: ");
@@ -31,7 +32,7 @@ public class GestionCursos {
         scanner.close();
     }
 
-    static void agreagarEstudiantes(){
+    static void agregarEstudiantes(){
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("¿Cuantos estudiantes quieres agregar?");
@@ -95,7 +96,7 @@ public class GestionCursos {
 
                     for (Curso curso : listaDeCursos) {
 
-                        if(curso.getCodigo() == codigoCurso){
+                        if(curso.codigo == codigoCurso){
 
                             curso.listaDeEstudiantes.add(estudiante);
                         }

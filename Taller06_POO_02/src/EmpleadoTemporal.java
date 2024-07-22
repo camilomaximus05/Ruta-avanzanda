@@ -1,6 +1,6 @@
 package Taller06_POO_02.src;
 
-public class EmpleadoTemporal extends  Empleado{
+public class EmpleadoTemporal extends  Empleado {
 
     public EmpleadoTemporal(String nombre, int edad, long idEmpleado, double salario) {
         super(nombre, edad, idEmpleado, salario);

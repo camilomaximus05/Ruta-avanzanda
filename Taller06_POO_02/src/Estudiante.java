@@ -5,6 +5,13 @@ public class Estudiante {
     private String nombre;
     private String email;
 
+    public Estudiante (long id, String nombre, String email){
+        this.id = id;
+        this.nombre = nombre;
+        this.email = email;
+
+    }
+
     public long getId() {
         return id;
     }

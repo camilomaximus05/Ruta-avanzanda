@@ -3,13 +3,9 @@ package Taller06_POO_02.src;
 import  java.util.*;
 public class Inventario {
 
-    ArrayList<ProductoEspecifico> listaDeProductos = new ArrayList<>();
+    static ArrayList<ProductoEspecifico> listaDeProductos = new ArrayList<>();
 
-    public Inventario() {
-        listaDeProductos = new ArrayList<>() ;
-    }
-
-    void agregarProducto() {
+    static void agregarProducto() {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -22,7 +18,7 @@ public class Inventario {
         scanner.nextLine();
 
         System.out.println("Ingresa el precio del producto");
-        double precio = scanner.nextDouble();
+        double precio = (double) scanner.nextDouble();
         scanner.nextLine();
 
         System.out.println("Ingresa la marca del producto");
@@ -37,12 +33,12 @@ public class Inventario {
         listaDeProductos.add(Producto);
     }
 
-    void eliminarProducto() {
+    static void eliminarProducto() {
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Ingresa el id del producto");
-        long id = scanner.nextLong();
+        long id = (long) scanner.nextLong();
         scanner.nextLine();
         scanner.close();
 
@@ -63,7 +59,7 @@ public class Inventario {
         }
     }
 
-    void buscarProducto(){
+    static void buscarProducto(){
         
         Scanner scanner = new Scanner(System.in);
         
@@ -105,15 +101,17 @@ public class Inventario {
         }
     }
 
-    void mostrarInventario() {
-
-        for (ProductoEspecifico listaDeProducto : listaDeProductos) {
-            System.out.println("Id: " + listaDeProducto.getId());
-            System.out.println("Nombre: " + listaDeProducto.getNombre());
-            System.out.println("Precio: " + listaDeProducto.getPrecio());
-            System.out.println("Marca: " + listaDeProducto.getMarca());
-            System.out.println("Categoria: " + listaDeProducto.getCategoria());
-            System.out.println(" ");
+    static void mostrarInventario() {
+        if(listaDeProductos.isEmpty()){
+            System.out.println("No hay productos en el inventario");
+        }else{
+            for (ProductoEspecifico listaDeProducto : listaDeProductos) {
+                System.out.println("Id: " + listaDeProducto.getId());
+                System.out.println("Nombre: " + listaDeProducto.getNombre());
+                System.out.println("Precio: " + listaDeProducto.getPrecio());
+                System.out.println("Marca: " + listaDeProducto.getMarca());
+                System.out.println("Categoria: " + listaDeProducto.getCategoria());
+            }
         }
     }
 
